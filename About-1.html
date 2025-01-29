@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-1</title>
+    <!-- ---------------custom link------------------------ -->
+    <!-- https://www.designovat.com/moric/lite/management.html -->
+
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ---bootstrap file----->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- owlcarousel file -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- animate file -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!---------aos file---------- -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!----------fancy box------------------>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- media css file -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        .per {
+            color: #333333;
+            padding: 0 0px;
+            margin: 0;
+            line-height: 1.875rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            background: url('./assets/hero_img_about.webp') no-repeat center bottom;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 150px 0px;
+        }
+
+        .hero h5 {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+        .hero p {
+            color: #ffffff;
+            line-height: normal;
+            font-size: 16px;
+        }
+
+        .item::before {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* -------------------section 2--------------------------------- */
+
+        .title h2 span {
+            font-weight: normal;
+            display: block;
+            color: #009abb;
+            padding-bottom: 10px;
+            font-size: 45%;
+        }
+
+        .title h2 {
+            font-size: 2.5rem;
+            font-weight: 390;
+            padding-bottom: 20px;
+            color: #111;
+        }
+
+        .about-img {
+            margin-top: 0;
+        }
+
+        .about-img img {
+            max-width: 75%;
+            height: auto;
+            float: right;
+        }
+
+        .about-point {
+            padding: 0px;
+            border-radius: 0px;
+            transition: all .5s ease-in-out;
+        }
+
+        .about-point img {
+            width: auto;
+            max-height: 55px;
+            margin-bottom: 20px;
+            position: relative;
+            top: 0px;
+            transition: all 250ms ease;
+        }
+
+        .about-point h6 {
+            font-size: 1.25rem;
+            font-weight: 450;
+            padding-bottom: 10px;
+            color: #111;
+        }
+
+        .about-point:hover img,
+        .about-point-block:hover img {
+            width: auto;
+            max-height: 55px;
+            margin-bottom: 20px;
+            position: relative;
+            top: -5px;
+            transform: scale(1.2, 1.2);
+        }
+
+        /* -------------------section 3--------------------------- */
+        .motos {
+            padding-top: 100px;
+            background-color: #fff;
+        }
+
+        .number {
+            padding: 100px 0px;
+            background: url('./assets/number_bg.webp') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .number-single {
+            text-align: center;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 50px;
+            padding: 30px;
+            margin: 15px 0px;
+            transition: all 500ms ease-in-out;
+        }
+
+        .number img {
+            width: auto;
+            max-height: 55px;
+            margin-bottom: 20px;
+        }
+
+        .number-single {
+            text-align: center;
+            background: rgba(0, 0, 0, 0);
+            border-radius: 50px;
+            padding: 30px;
+            margin: 15px 0px;
+            transition: all 500ms ease-in-out;
+        }
+
+        .number-single:hover {
+            background: rgba(0, 0, 0, .4);
+            border-radius: 0px;
+        }
+
+        .number-single h1 {
+            color: #00b0d6;
+            font-weight: normal;
+            font-size: 48px;
+        }
+
+        .number-single p {
+            color: #999999;
+        }
+
+        /* -------------------section 4------------------------------ */
+        .onsite {
+            padding-top: 100px;
+            background-color: #fff;
+        }
+
+        .gall {
+            max-height: 350px;
+            padding: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .gall .moto::before {
+            content: '';
+            background-color: #000000;
+            width: 10%;
+            height: 10%;
+            z-index: 1;
+            display: block;
+            position: absolute;
+            opacity: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 500ms ease;
+        }
+
+        .gall .moto:hover::before {
+            content: '';
+            background-color: #000000;
+            width: 82%;
+            height: 80%;
+            z-index: 1;
+            display: block;
+            position: absolute;
+            opacity: 0.7;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .gall .moto .icon {
+            max-width: 10%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transition: all 500ms ease;
+            transform: translate(-50%, -50%) scale(2);
+            opacity: 0;
+        }
+
+        .gall .moto:hover .icon {
+            max-width: 10%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .icon img {
+            max-width: 100%;
+        }
+
+        /* ----------------------section 5---------------------------------- */
+        .precious {
+            padding: 100px 0px;
+            background-color: #f4f4f4;
+        }
+
+        .client-single {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .client-single img {
+            border: 1px solid #cccccc;
+        }
+
+        /* ---------------------media--------------------------------- */
+
+        @media screen and (max-width: 575.98px) {
+
+            /* -------------------sec 2---------------------------------- */
+            .about-img img {
+                max-width: 100%;
+                height: auto;
+                padding-top: 20px;
+            }
+
+            /* ----------------sec 3----------------------------- */
+            .motos {
+                padding-top: 20px;
+                background: #fff;
+            }
+
+            /* ----------------sec 4-------------------------- */
+            .onsite {
+                padding-top: 20px;
+                background-color: #fff;
+            }
+
+            .title h2 span {
+                font-size: 1.10rem;
+            }
+
+            .title h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+
+            /* -------------------section 5--------------------------- */
+            .precious {
+                padding: 20px 0px;
+                background-color: #f4f4f4;
+            }
+        }
+
+        @media screen and (min-width: 575.99px) and (max-width: 767.98px) {
+
+            .container {
+                max-width: 540px;
+            }
+
+            /* -------------------sec 2---------------------------------- */
+            .about-img img {
+                max-width: 100%;
+                height: auto;
+                padding-top: 20px;
+            }
+
+            /* ----------------sec 3----------------------------- */
+            .motos {
+                padding-top: 20px;
+                background: #fff;
+            }
+
+            /* ----------------sec 4-------------------------- */
+            .onsite {
+                padding-top: 20px;
+                background-color: #fff;
+            }
+
+            .title h2 span {
+                font-size: 1.10rem;
+            }
+
+            .title h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+
+            /* -------------------section 5--------------------------- */
+            .precious {
+                padding: 20px 0px;
+                background-color: #f4f4f4;
+            }
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+            .per {
+                color: #333333;
+                padding: 0 0px;
+                margin: 0;
+                line-height: 1.875rem;
+                letter-spacing: 0.5px;
+            }
+
+            .container {
+                max-width: 720px;
+            }
+
+            /* -------------------sec 2---------------------------------- */
+            .about-img img {
+                max-width: 100%;
+                height: auto;
+                padding-top: 60px;
+            }
+
+            /* ----------------sec 3----------------------------- */
+            .motos {
+                padding-top: 60px;
+                background: #fff;
+            }
+
+            /* ----------------sec 4-------------------------- */
+            .onsite {
+                padding-top: 60px;
+                background-color: #fff;
+            }
+
+            .title h2 span {
+                font-size: 1.10rem;
+            }
+
+            .title h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+                padding-bottom: 15px;
+            }
+
+            /* -------------------section 5--------------------------- */
+            .precious {
+                padding: 60px 0px;
+                background-color: #f4f4f4;
+            }
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+            .head {
+                display: block;
+            }
+            .container{
+                max-width: 960px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -----------------Top info------------------------------- -->
+
+    <div class="head">
+        <!-- -----------------------------header--------------------------------------------- -->
+        <div class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/asset 0.webp" alt="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class=" d-sm-none d-none d-lg-block">
+                            <ul class="main_menu d-flex m-0 ">
+                                <li><a href="index.html" style="color: #00B0D6;" class="active">Home </a></li>
+                                <li><a href="#">About <i class="fa-solid fa-caret-down"
+                                            style="padding-left: 5px;"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="">About-1</a></li>
+                                        <li><a href="About-2.html">About-2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Yachts <i class="fa-solid fa-caret-down"
+                                            style="padding-left: 5px;"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="all_yatch.html">All Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Motor Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Fishing Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Sailing Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Groups Yachts</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Activity.html">Activities</a></li>
+                                <li><a href="management.html">Management</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Version</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="toggle_icon d-lg-none d-md-block">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul class="mob_main_menu close mob_main_menu d-lg-none">
+                            <li><a href="index.html" style="color: #00B0D6;" class="active">Home </a></li>
+                            <li><a href="#">About <i class="fa-solid fa-caret-down" style="padding-left: 5px;"></i></a>
+                                <ul class="mob_submenu">
+                                    <li><a href="#">About-1</a></li>
+                                    <li><a href="About-2.html">About-2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Yachts <i class="fa-solid fa-caret-down" style="padding-left: 5px;"></i></a>
+                                <ul class="mob_submenu">
+                                    <li><a href="all_yatch.html">All Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Motor Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Fishing Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Sailing Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Groups Yachts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Activity.html">Activities</a></li>
+                            <li><a href="management.html">Management</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Version</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ----------------------------section 1------------------------------------------------- -->
+        <section class="hero">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-text">
+                                <h5 class="text-light">About Us</h5>
+                                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -----------------------section 2------------------------------------- -->
+        <section style="padding-top: 100px; background-color: #ffffff;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                        <div class="title">
+                            <h2><span>Few Words</span>About Us</h2>
+                        </div>
+                        <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation commodo
+                            consequat. Duis aute irure dolor in reprehenderit in dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                        <div class="about-img"><img class="img-fluid" src="assets/about.webp" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 pt-5">
+                        <div class="about-point">
+                            <img src="assets/about_icon_1.svg" alt="">
+                            <h6>Luxury Yachts</h6>
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore adipiscing elit dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 pt-5">
+                        <div class="about-point">
+                            <img src="assets/about_icon_2.svg" alt="">
+                            <h6>Luxury Yachts</h6>
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore adipiscing elit dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 pt-5">
+                        <div class="about-point">
+                            <img src="assets/about_icon_3.svg" alt="">
+                            <h6>Luxury Yachts</h6>
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore adipiscing elit dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 pt-5">
+                        <div class="about-point">
+                            <img src="assets/about_icon_4.svg" alt="">
+                            <h6>Luxury Yachts</h6>
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore adipiscing elit dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- --------------------section 3------------------------------------>
+        <section class="motos">
+            <div class="container-fluid number">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="number-single">
+                                <img src="assets/number_img_1.webp" class="img-fluid" alt="">
+                                <h1>1200+</h1>
+                                <p>Our Customer</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="number-single">
+                                <img src="assets/number_img_2.webp" class="img-fluid" alt="">
+                                <h1>51+</h1>
+                                <p>Total Yachts</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="number-single">
+                                <img src="assets/number_img_3.webp" class="img-fluid" alt="">
+                                <h1>69</h1>
+                                <p>Our Locations</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="number-single">
+                                <img src="assets/number_img_4.webp" class="img-fluid" alt="">
+                                <h1>1800+</h1>
+                                <p>Total Tours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------------section 4--------------------------------- -->
+        <section class="onsite">
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="title">
+                                    <h2><span>Onsite</span>Photoshoot</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-1.webp" class="moto group">
+                                    <img src="assets/img-gallery-1.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-2.webp" class="moto group">
+                                    <img src="assets/img-gallery-2.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-3.webp" class="moto group">
+                                    <img src="assets/img-gallery-3.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-4.webp" class="moto group">
+                                    <img src="assets/img-gallery-4.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-5.webp" class="moto group">
+                                    <img src="assets/img-gallery-5.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-6.webp" class="moto group">
+                                    <img src="assets/img-gallery-6.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-7.webp" class="moto group">
+                                    <img src="assets/img-gallery-7.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 gall">
+                                <a href="assets/img-gallery-8.webp" class="moto group">
+                                    <img src="assets/img-gallery-8.webp" alt="" class="img-fluid">
+                                    <div class="icon">
+                                        <img src="assets/icon_zoom.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------------section 4----------------------------------- -->
+        <section class="precious">
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="title">
+                                    <h2><span>Precious</span>Clients</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6 client-single">
+                                <img class="img-fluid" src="assets/client_1.webp" alt="">
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 client-single">
+                                <img class="img-fluid" src="assets/client_2.webp" alt="">
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 client-single">
+                                <img class="img-fluid" src="assets/client_3.webp" alt="">
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6 client-single">
+                                <img class="img-fluid" src="assets/client_1.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ---------------------section 9------------------------------------ -->
+        <section style="padding-top: 45px; background-color: #000;">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-col">
+                                <h5>Activities</h5>
+                                <ul>
+                                    <li><a href="activities.html">Luxury Cruising</a></li>
+                                    <li><a href="activities.html">Dolphin Watching</a></li>
+                                    <li><a href="activities.html">Fishing</a></li>
+                                    <li><a href="activities.html">Stag / Hen Parties</a></li>
+                                    <li><a href="activities.html">Gibraltar Tour</a></li>
+                                    <li><a href="activities.html">Corporate Events</a></li>
+                                    <li><a href="activities.html">Day Sailing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-col">
+                                <h5>Yachts</h5>
+                                <ul>
+                                    <li><a href="activities.html">Moto groupr Yachts</a></li>
+                                    <li><a href="activities.html">Fishing Boats</a></li>
+                                    <li><a href="activities.html">Sailing Yachts</a></li>
+                                    <li><a href="activities.html">Groups Boats</a></li>
+                                    <li><a href="activities.html">About</a></li>
+                                    <li><a href="activities.html">Management</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-col">
+                                <div class="footer-con">
+                                    <h5>Contact Us</h5>
+                                    <ul>
+                                        <li>
+                                            <i class="fas fa-map-marker-alt mt-2"></i>
+                                            <p>2079 Settlers Lane, lorem ipsum - 56478354</p>
+                                        </li>
+                                        <li><i class="fas fa-envelope mt-1"></i>
+                                            <p>email@example.com</p>
+                                        </li>
+                                        <li><i class="fas fa-phone mt-1"></i>
+                                            <p>+54 192 45 78 621 / 622 / 623</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-social mt-4">
+                                    <h6 style="font-size: 20px;">We are social</h6>
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="footer-col">
+                                <div class="footer-part">
+                                    <h5>Business Partner</h5>
+                                    <div>
+                                        <img src="assets/asset 17.webp" alt="">
+                                    </div>
+                                    <p>Our huge list of partner market is lorem ipsum dolor sit consectetur
+                                        amet,
+                                        adipisicing elit. Suscipit, incidunt vero quod numquam tempore quia
+                                        ipsa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid footer-copy">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                <p class="m-0">Copyright © 2022 Moric. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+
+        <!-- js file -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/multi-animated-counter.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    var h = $(window).scrollTop()
+
+                    if (h > 20) {
+                        $('.header').addClass('fixed_header')
+                    } else {
+                        $('.header').removeClass('fixed_header')
+                    }
+                })
+
+                //Responsive header//-----------------------
+                $('.mob_submenu ').hide()
+
+                $('.toggle_icon').click(function () {
+                    $('.mob_main_menu').toggleClass('close')
+                    $(this).find('i').toggleClass('fa-bars fa-times');
+                })
+
+                $('.mob_main_menu > li > a').click(function () {
+                    $(this).next('.mob_submenu').slideToggle();
+                })
+                $('.mob_main_menu li a').click(function () {
+                    $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
+                })
+            })
+
+            // --------------menu----------------------
+            $('#view').first().addClass('active');
+
+            $('.act').click(function () {
+                $('.act').removeClass('active');
+                $(this).addClass('active');
+            });
+            $("a.group").attr('rel', 'gallery').fancybox({
+                'transitionIn': 'elastic',
+                'transitionOut': 'elastic',
+                'speedIn': 600,
+                'speedOut': 200,
+                'overlayShow': false,
+                'loop': true,
+
+            });
+            // ----------------------section 4--------------------------
+            function openCity(cityName) {
+                var i;
+                var x = document.getElementsByClassName("city");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(cityName).style.display = "block";
+            }
+            $(document).ready(function () {
+                $("#slider").owlCarousel({
+                    items: 3,
+                    loop: true,
+                    nav: false,
+                    dots: true,
+                    margin: 20,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        991: {
+                            items: 2,
+
+                        },
+                        1000: {
+                            items: 3,
+                        }
+                    }
+
+                })
+            });
+            $(document).ready(function () {
+                $("#slider2").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    nav: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplayTimeout: 4000,
+                })
+
+
+            })
+        </script>
+</body>
+
+</html>

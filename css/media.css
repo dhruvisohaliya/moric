@@ -1,0 +1,318 @@
+@media screen and (max-width: 575.98px) {
+    #banner .item h1 , #banner .items h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 40px;
+      }
+      #banner .item p , #banner .items p {
+        padding: 10px 10% 10px 10%;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      /* ----------------section 3----------------------------- */
+      .back{
+        padding: 20px 0px 0px 0px;
+      }
+      .h2 span {
+        font-weight: normal;
+        display: block;
+        color: #009abb;
+        padding-bottom: 10px;
+        font-size: 1.10rem;
+      }
+      .h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-bottom: 15px;
+        color: #111;
+      }
+      /* ----------------section 4 --------------------------------- */
+      .back1{
+        padding-top: 20px;
+      }
+      .sect{
+        overflow: hidden;
+        height: 100%;
+      }
+      .h3 {
+        font-size: 1.35rem;
+        font-weight: 500;
+        padding-bottom: 15px;
+        color: #111;
+    }
+      .h3 .type{
+        font-size: 20px;
+      }
+      .tab-info {
+        padding: 30px 15px;
+        background-color: #ffffff;
+    }
+    /* -----------------section 5--------------------------------- */
+    
+    .sport{
+      color: #111;
+      font-size: 24px;
+      font-weight: 500;
+      padding-bottom: 15px;
+    }
+    .fishing h5 {
+      font-size: 1.20rem;
+      font-weight: 500;
+      padding-bottom: 5px;
+      color: #111;
+    }
+}
+@media screen and (min-width: 575.99px) and (max-width: 767.98px){
+  #banner .item h1 {
+    font-size: 1.70rem;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+  #banner .item p {
+    padding: 15px 10% 0px 10%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+  /* ----------------section 3----------------------------- */
+  .back{
+    padding: 50px 0px 0px 0px;
+  }
+  .h2 span {
+    font-weight: normal;
+    display: block;
+    color: #009abb;
+    padding-bottom: 10px;
+    font-size: 1.10rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: #111;
+  }
+   /* ----------------section 4 --------------------------------- */
+   .back1{
+    padding-top: 50px;
+  }
+  .sect{
+    overflow: hidden;
+    height: 100%;
+  }
+  .h3 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: #111;
+}
+  .h3 .type{
+    font-size: 1.25rem;
+  }
+  .tab-info {
+    padding: 40px;
+    background-color: #ffffff;
+}
+.button-group button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: #666;
+  font-size: 16px;
+  position: relative;
+  padding: 10px;
+  font-weight: 400;
+}
+/* -----------------section 5--------------------------------- */
+.back3{
+  padding: 50px 0px 0px 0px;
+}
+.cont1{
+  padding: 0px 30px;
+}    
+.sport{
+  color: #111;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.fishing h5 {
+  font-size: 1.20rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: #111;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+  #banner .item h1 , #banner .items h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 40px;
+  }
+  #banner .item p , #banner .items p {
+    padding: 20px 10% 10px 10%;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
+   /* ----------------section 3----------------------------- */
+   .back{
+    padding: 60px 0px 0px 0px;
+  }
+  .per {
+    color: #333333;
+    padding: 0 150px;
+    margin: 0;
+    line-height: 1.875rem;
+    letter-spacing: 0.5px;
+  }
+  .h2 span {
+    font-weight: normal;
+    display: block;
+    color: #009abb;
+    padding-bottom: 10px;
+    font-size: 1.10rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: #111;
+  }
+  /* ----------------section 4 --------------------------------- */
+  .back1{
+    padding-top: 50px;
+  }
+  .sect{
+    overflow: hidden;
+    height: 100%;
+  }
+  .h3 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: #111;
+}
+  .h3 .type{
+    font-size: 1.25rem;
+  }
+  .tab-info {
+    padding: 40px;
+    background-color: #ffffff;
+}
+.per2{
+  padding: 0;
+}
+.button-group button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: #666;
+  font-size: 16px;
+  position: relative;
+  padding: 15px 25px;
+  font-weight: 400;
+}
+/* -----------------section 5--------------------------------- */
+.cont1{
+  padding:0px 60px;
+}
+.sport{
+  color: #111;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.fishing h5 {
+  font-size: 1.20rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: #111;
+}
+/* ------------------------section 6-------------------------------------- */
+.picture h4{
+  font-size: 1.75rem;
+  padding: 0px 160px 30px;
+}
+/* ----------------------section 8---------------------------------------- */
+.content p{
+  margin: 10px 140px 0px 140px;
+}
+.update-btn button{
+  margin-top: 20px;
+}
+/* ---------------------section 9---------------------------------- */
+.footer-col{
+  padding-left:60px ;
+}
+.footer-copy{
+  padding-left: 60px;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+   .head{
+    display: block;
+   }
+}
+@media screen and (max-width: 991.98px){
+  .bar{
+    color:#00B0D6;
+   
+    }
+   
+    .nav , .mob_main_menu{
+        display: none;
+    }
+    .logo img
+    {
+     z-index: -1;
+    }
+    .toggle_icon 
+    {   
+       font-size: 25px;
+       color:#00B0D6 ; 
+       position: absolute;
+       top: 15px;
+       right: 50px;
+    }
+    
+    .mob_main_menu
+    {
+        display: block;
+        position: absolute;
+        height: 450px;
+        overflow-y:scroll;
+        top: -34%;
+        right: 0;
+        font-weight: 600;
+        z-index: -2;
+        background-color: white;
+        min-width: 300px;
+        transition: .4s ease-in-out;
+        padding: 70px 40px 10px 40px;
+      
+    }
+    
+    .fixed_header .active , .fixed_header a:hover{
+        color:#000 !important;
+       }
+    
+    .mob_submenu
+    {
+        padding-left: 40px;
+    }
+    .mob_main_menu li a
+    {
+        display: block;
+        padding: 8px;
+        color: #333;
+    }
+    .close{
+        transform: translateX(100%);
+        color: black;
+    }
+  }

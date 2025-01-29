@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+    <!-- ---------------custom link------------------------ -->
+    <!-- https://www.designovat.com/moric/lite/management.html -->
+
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ---bootstrap file----->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- owlcarousel file -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- animate file -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!---------aos file---------- -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!----------fancy box------------------>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- media css file -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        .per {
+            color: #333333;
+            padding: 0 0px;
+            margin: 0;
+            line-height: 1.875rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            background: url('./assets/hero_img_activity.webp') no-repeat center bottom;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 120px 0px;
+        }
+
+        .hero h5 {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+        .hero p {
+            color: #ffffff;
+            line-height: normal;
+            font-size: 16px;
+        }
+
+        .item::before {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* -------------------section 2------------------------------------- */
+        .pro span {
+            font-weight: normal;
+            display: block;
+            color: #009abb;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .pro {
+            font-size: 2.5rem;
+            font-weight: 390;
+            padding-bottom: 20px;
+            color: #111;
+        }
+
+        .enjoy {
+            padding-top: 100px;
+            background-color: #f4f4f4;
+        }
+
+        .act-sec {
+            position: relative;
+        }
+
+        .act-img {
+            position: relative;
+        }
+
+        .act-head {
+            position: absolute;
+            background-image: linear-gradient(to left, #00c1c8, #009abb);
+            color: #ffffff;
+            padding: 50px;
+            position: absolute;
+            top: 50px;
+            width: 55%;
+            display: block;
+            right: 14px;
+        }
+
+        .act-head h3 {
+            padding: 0px;
+            font-size: 2rem;
+            font-weight: 390;
+        }
+
+        .act-head p {
+            color: #ffffff;
+            font-size: 1.5rem;
+            padding-top: 10px;
+            line-height: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .act-text {
+            padding: 40px 40px 0px 40px;
+        }
+
+        /* --------------------section 3------------------------------- */
+        .dolphin {
+            padding: 100px 0px 0px 0px;
+            background-color: #f4f4f4;
+        }
+
+        .full-width {
+            padding: 50px;
+            background-color: #ffffff;
+
+        }
+
+        .full-width h3 {
+            font-size: 2rem;
+            font-weight: 390;
+            padding-bottom: 15px;
+        }
+
+        .full-width h3 span {
+            padding-top: 10px;
+            font-size: 75%;
+            line-height: 2rem;
+            font-weight: normal;
+            display: block;
+            color: #009abb;
+            padding-bottom: 10px;
+
+        }
+
+        /* ---------------------media--------------------------------- */
+
+        @media screen and (max-width: 575.98px) {
+
+            /* ---------------section 2--------------------------------- */
+            .act-head {
+                background-color: #ffffff;
+                padding: 15px;
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .act-head h3 {
+                padding: 0px;
+                font-size: 1.35rem;
+                font-weight: 500;
+            }
+
+            .act-head p {
+                color: #ffffff;
+                font-size: 1.1rem;
+                padding-top: 10px;
+                line-height: 1.7rem;
+                letter-spacing: 0.5px;
+            }
+
+            .act-text p {
+                padding: 0px 15px 0px 15px;
+            }
+
+            .act-text {
+                padding: 15px 0px 15px 0px;
+            }
+
+            /* -----------------section 3----------------------------- */
+            .full-width {
+                padding: 15px;
+                background-color: #ffffff;
+            }
+        }
+
+        @media screen and (min-width: 575.99px) and (max-width: 767.98px) {
+
+            .container {
+                max-width: 540px;
+            }
+
+            .act-head {
+                background-color: #ffffff;
+                padding: 25px;
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .act-head h3 {
+                padding: 0px;
+                font-size: 1.35rem;
+                font-weight: 500;
+            }
+
+            .act-head p {
+                color: #ffffff;
+                font-size: 1.2rem;
+                padding-top: 10px;
+                line-height: 1.5rem;
+                letter-spacing: 0.5px;
+            }
+
+            .act-text p {
+                padding: 0px 15px 0px 15px;
+            }
+
+            /* ----------------section 3--------------------------------- */
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+            .per {
+                color: #333333;
+                padding: 0 0px;
+                margin: 0;
+                line-height: 1.875rem;
+                letter-spacing: 0.5px;
+            }
+
+            .container {
+                max-width: 720px;
+            }
+
+            .act-head {
+                background-color: #ffffff;
+                padding: 30px;
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .act-head h3 {
+                padding: 0px;
+                font-size: 1.35rem;
+                font-weight: 500;
+            }
+
+            .act-head p {
+                color: #ffffff;
+                font-size: 1.3rem;
+                padding-top: 10px;
+                line-height: 1.7rem;
+                letter-spacing: 0.5px;
+            }
+
+            /* --------------section 3----------------------- */
+
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+            .container {
+                max-width: 960px;
+            }
+
+            .act-head {
+                position: absolute;
+                background-image: linear-gradient(to left, #00c1c8, #009abb);
+                color: #ffffff;
+                padding: 40px;
+                position: absolute;
+                top: 50px;
+                width: 55%;
+                display: block;
+                right: 14px;
+            }
+
+            .act-head h3 {
+                padding: 0px;
+                font-size: 1.75rem;
+                font-weight: 390;
+            }
+
+            .act-head p {
+                color: #ffffff;
+                font-size: 1.4rem;
+                padding-top: 10px;
+                line-height: 1.7rem;
+                letter-spacing: 0.5px;
+            }
+
+            .act-text {
+                padding: 40px 40px 0px 40px;
+            }
+
+            /* -----------------section 3------------------------ */
+            .full-width {
+                padding: 40px;
+                background-color: #ffffff;
+            }
+
+            .full-img .img-fluid {
+                max-width: 137%;
+                height: auto;
+                text-align: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -----------------Top info------------------------------- -->
+
+    <div class="head">
+        <!-- -----------------------------header--------------------------------------------- -->
+        <div class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/asset 0.webp" alt="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class=" d-sm-none d-none d-lg-block">
+                            <ul class="main_menu d-flex m-0 ">
+                                <li><a href="index.html" style="color: #00B0D6;" class="active">Home </a></li>
+                                <li><a href="#">About <i class="fa-solid fa-caret-down"
+                                            style="padding-left: 5px;"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="About-1.html">About-1</a></li>
+                                        <li><a href="About-2.html">About-2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Yachts <i class="fa-solid fa-caret-down"
+                                            style="padding-left: 5px;"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="all_yatch.html">All Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Motor Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Fishing Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Sailing Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Groups Yachts</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Activities</a></li>
+                                <li><a href="management.html">Management</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="#">Version</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="toggle_icon d-lg-none d-md-block">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul class="mob_main_menu close mob_main_menu d-lg-none">
+                            <li><a href="index.html" style="color: #00B0D6;" class="active">Home </a></li>
+                            <li><a href="#">About <i class="fa-solid fa-caret-down" style="padding-left: 5px;"></i></a>
+                                <ul class="mob_submenu">
+                                    <li><a href="About-1.html">About-1</a></li>
+                                    <li><a href="About-2.html">About-2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Yachts <i class="fa-solid fa-caret-down" style="padding-left: 5px;"></i></a>
+                                <ul class="mob_submenu">
+                                    <li><a href="all_yatch.html">All Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Motor Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Fishing Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Sailing Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Groups Yachts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="management.html">Management</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">Version</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------section 1------------------------------------------------- -->
+    <section class="hero">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hero-text">
+                            <h5 class="text-light">Exciting Activities</h5>
+                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------section 2-------------------------------------- -->
+    <section class="enjoy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 m-auto text-center">
+                    <div class="title pb-3">
+                        <h2 class="pro"><span>Enjoy</span>Activities</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row act-sec">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
+                    <div class="act-img">
+                        <img class="img-fluid" src="assets/activity_1.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 ">
+                    <div class="act-head">
+                        <h3 class="mb-0">Luxury Cruising</h3>
+                        <p class="mb-0">The once in a while experience of a luxury ship cruise combined with energetic
+                            services and luxurious amenities.</p>
+                    </div>
+                </div>
+                <div class="act-text">
+                    <div class="row">
+                        <div class=" col-xl-6 col-lg-6 col-md-6">
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+
+                        <div class=" col-xl-6 col-lg-6 col-md-6">
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------section 3---------------------------------- -->
+    <section class="dolphin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7 order-lg-2 col-md-12 order-md-1 order-sm-1 p-0">
+                    <div class="full-img">
+                        <img class="img-fluid" src="assets/activity_2.webp" alt="">
+                    </div>
+                </div>
+                <div class=" col-xl-5 col-lg-5 order-lg-1 col-md-12 order-md-2 order-sm-2 full-width">
+                    <h3>Dolphin Watching
+                        <span>Having an experience as unique and memorable as dolphin watching.</span>
+                    </h3>
+                    <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------section 4------------------------------------ -->
+    <section class="enjoy">
+        <div class="container">
+            
+            <div class="row act-sec">
+                <div class="col-xl-6 col-lg-6 col-sm-12">
+                    <div class="act-img">
+                        <img class="img-fluid" src="assets/activity_3.webp" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 ">
+                    <div class="act-head">
+                        <h3 class="mb-0">Fishing</h3>
+                        <p class="mb-0">The once in a while experience of a luxury ship cruise combined with energetic
+                            services and luxurious amenities.</p>
+                    </div>
+                </div>
+                <div class="act-text">
+                    <div class="row">
+                        <div class=" col-xl-6 col-lg-6 col-md-6">
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+
+                        <div class=" col-xl-6 col-lg-6 col-md-6">
+                            <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------section 5----------------------------------->
+    <section class="dolphin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7 order-lg-2 col-md-12 order-md-1 order-sm-1 p-0">
+                    <div class="full-img">
+                        <img class="img-fluid" src="assets/activity_4.webp" alt="">
+                    </div>
+                </div>
+                <div class=" col-xl-5 col-lg-5 order-lg-1 col-md-12 order-md-2 order-sm-2 full-width">
+                    <h3>Stag / Hen Parties
+                        <span>Having an experience as unique and memorable as dolphin watching.</span>
+                    </h3>
+                    <p class="per">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------section 9------------------------------------ -->
+    <section style="padding-top: 45px; background-color: #000;">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <h5>Activities</h5>
+                            <ul>
+                                <li><a href="activities.html">Luxury Cruising</a></li>
+                                <li><a href="activities.html">Dolphin Watching</a></li>
+                                <li><a href="activities.html">Fishing</a></li>
+                                <li><a href="activities.html">Stag / Hen Parties</a></li>
+                                <li><a href="activities.html">Gibraltar Tour</a></li>
+                                <li><a href="activities.html">Corporate Events</a></li>
+                                <li><a href="activities.html">Day Sailing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <h5>Yachts</h5>
+                            <ul>
+                                <li><a href="activities.html">Moto groupr Yachts</a></li>
+                                <li><a href="activities.html">Fishing Boats</a></li>
+                                <li><a href="activities.html">Sailing Yachts</a></li>
+                                <li><a href="activities.html">Groups Boats</a></li>
+                                <li><a href="activities.html">About</a></li>
+                                <li><a href="activities.html">Management</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <div class="footer-con">
+                                <h5>Contact Us</h5>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt mt-2"></i>
+                                        <p>2079 Settlers Lane, lorem ipsum - 56478354</p>
+                                    </li>
+                                    <li><i class="fas fa-envelope mt-1"></i>
+                                        <p>email@example.com</p>
+                                    </li>
+                                    <li><i class="fas fa-phone mt-1"></i>
+                                        <p>+54 192 45 78 621 / 622 / 623</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-social mt-4">
+                                <h6 style="font-size: 20px;">We are social</h6>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <div class="footer-part">
+                                <h5>Business Partner</h5>
+                                <div>
+                                    <img src="assets/asset 17.webp" alt="">
+                                </div>
+                                <p>Our huge list of partner market is lorem ipsum dolor sit consectetur
+                                    amet,
+                                    adipisicing elit. Suscipit, incidunt vero quod numquam tempore quia
+                                    ipsa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer-copy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <p class="m-0">Copyright © 2022 Moric. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/multi-animated-counter.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+
+                if (h > 20) {
+                    $('.header').addClass('fixed_header')
+                } else {
+                    $('.header').removeClass('fixed_header')
+                }
+            })
+
+            //Responsive header//-----------------------
+            $('.mob_submenu ').hide()
+
+            $('.toggle_icon').click(function () {
+                $('.mob_main_menu').toggleClass('close')
+                $(this).find('i').toggleClass('fa-bars fa-times');
+            })
+
+            $('.mob_main_menu > li > a').click(function () {
+                $(this).next('.mob_submenu').slideToggle();
+            })
+            $('.mob_main_menu li a').click(function () {
+                $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
+            })
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- ---------------custom link------------------------ -->
+    <!-- https://www.designovat.com/moric/lite/management.html -->
+
+    <!-- font awesome file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- ---bootstrap file----->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- owlcarousel file -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- animate file -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <!---------aos file---------- -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!----------fancy box------------------>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- media css file -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <style>
+        .per {
+            color: #333333;
+            padding: 0 0px;
+            margin: 0;
+            line-height: 1.875rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            background: url('./assets/hero_img_contact.webp') no-repeat center bottom;
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 120px 0px;
+        }
+
+        .hero h5 {
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+
+        .hero p {
+            color: #ffffff;
+            line-height: normal;
+            font-size: 16px;
+        }
+
+        .item::before {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 0.3;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        /* -------------------section 2------------------------------------- */
+        .pro span {
+            font-weight: normal;
+            display: block;
+            color: #009abb;
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .pro {
+            font-size: 2.5rem;
+            font-weight: 390;
+            padding-bottom: 20px;
+            color: #111;
+        }
+
+        .multination {
+            padding: 100px 0px 100px 0px;
+            background-color: #f4f4f4;
+        }
+
+        .count {
+            padding: 30px;
+            background-color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .count ul {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .count li {
+            padding: 0px 0px 10px 0px;
+        }
+
+        .count li h6 {
+            padding: 0px 0px 10px 0px;
+        }
+
+        .count i {
+            color: #00313b;
+            padding-right: 10px;
+            font-size: 0.90rem;
+            display: inline;
+        }
+
+        .count p {
+            display: inline;
+        }
+
+        /* ------------------form------------------------------ */
+        .contact-form {
+            padding-top: 50px;
+        }
+
+        .form-body {
+            position: relative;
+            padding: 1rem 0rem;
+        }
+
+        .contact-form .form-control {
+            color: #333333 !important;
+            display: block;
+            width: 100%;
+            height: 45px;
+            padding: 10px 20px 10px 20px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #cccccc;
+            border-radius: 0rem;
+            position: relative;
+        }
+        
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-footer {
+            position: relative;
+            padding: 1rem 0rem;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #111111;
+            border: 1px solid #111111;
+            border-radius: 0px;
+        }
+
+        .btn {
+            font-size: .8rem;
+            font-weight: bold;
+            border-radius: 0px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding: 15px 40px;
+        }
+
+        .form-group .fa-caret-up {
+            position: absolute;
+            left: 95%;
+            top: 95px;
+            font-size: 10px;
+        }
+
+        .form-group .fa-caret-down {
+            position: absolute;
+            left: 95%;
+            top: 99px;
+            font-size: 10px;
+        }
+
+        .map-container {
+            overflow: hidden;
+            position: relative;
+            min-height: 500px;
+            margin-top: 50px;
+        }
+
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        /* ---------------------media--------------------------------- */
+
+        @media screen and (max-width: 575.98px) {
+
+            /* ---------------section 2--------------------------------- */
+
+        }
+
+        @media screen and (min-width: 575.99px) and (max-width: 767.98px) {
+
+            .container {
+                max-width: 540px;
+            }
+
+
+
+            /* ----------------section 3--------------------------------- */
+
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 991.98px) {
+
+            .per {
+                color: #333333;
+                padding: 0 0px;
+                margin: 0;
+                line-height: 1.875rem;
+                letter-spacing: 0.5px;
+            }
+
+            .container {
+                max-width: 720px;
+            }
+
+
+
+            /* --------------section 2----------------------- */
+
+        }
+
+        @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+            .container {
+                max-width: 960px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- -----------------Top info------------------------------- -->
+
+    <div class="head">
+        <!-- -----------------------------header--------------------------------------------- -->
+        <div class="header">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-auto">
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/asset 0.webp" alt="#"></a>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <nav class=" d-sm-none d-none d-lg-block">
+                            <ul class="main_menu d-flex m-0 ">
+                                <li><a href="index.html" style="color: #00B0D6;" class="active">Home </a></li>
+                                <li><a href="#">About <i class="fa-solid fa-caret-down"
+                                            style="padding-left: 5px;"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="About-1.html">About-1</a></li>
+                                        <li><a href="About-2.html">About-2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Yachts <i class="fa-solid fa-caret-down"
+                                            style="padding-left: 5px;"></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="all_yatch.html">All Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Motor Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Fishing Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Sailing Yachts</a></li>
+                                        <li><a href="moter_yachts.html">Groups Yachts</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="Activity.html">Activities</a></li>
+                                <li><a href="management.html">Management</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Version</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="toggle_icon d-lg-none d-md-block">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul class="mob_main_menu close mob_main_menu d-lg-none">
+                            <li><a href="index.html" style="color: #00B0D6;" class="active">Home </a></li>
+                            <li><a href="#">About <i class="fa-solid fa-caret-down" style="padding-left: 5px;"></i></a>
+                                <ul class="mob_submenu">
+                                    <li><a href="About-1.html">About-1</a></li>
+                                    <li><a href="About-2.html">About-2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Yachts <i class="fa-solid fa-caret-down" style="padding-left: 5px;"></i></a>
+                                <ul class="mob_submenu">
+                                    <li><a href="all_yatch.html">All Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Motor Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Fishing Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Sailing Yachts</a></li>
+                                    <li><a href="moter_yachts.html">Groups Yachts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Activity.html">Activities</a></li>
+                            <li><a href="management.html">Management</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Version</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------section 1------------------------------------------------- -->
+    <section class="hero">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="hero-text">
+                            <h5 class="text-light">Contact Us</h5>
+                            <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------section 2-------------------------------------- -->
+    <section class="multination">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 m-auto text-center">
+                    <div class="title pb-3">
+                        <h2 class="pro"><span>Reach Anywhere</span>We are Multinational</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="count">
+                        <ul>
+                            <li>
+                                <h6>Country - 1</h6>
+
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>34 Oak Street, lorem ipsum, New South block</p>
+
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope-open"></i>
+                                <p><a href="#">email@example.com</a></p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <p> +(02) 6792 9005&nbsp;/&nbsp;+(02) 6792 9006</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="count">
+                        <ul>
+                            <li>
+                                <h6>Country - 1</h6>
+
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>2079 Settlers Lane, lorem ipsum - 56478354</p>
+
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope-open"></i>
+                                <p><a href="#">email@example.com</a></p>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <p>+54 192 45 78 621&nbsp;/&nbsp;+54 192 45 78 622</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="contact-form">
+                        <p class="per">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod inventore
+                            repellat? Aut,
+                            nesciunt nobis.</p>
+
+                        <div class="form-body">
+                            <form>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name"
+                                        id="exampleFormControlInput1">
+                                </div>
+
+                                <div class="form-group">
+                                    <i class="fa-solid fa-caret-up"></i>
+                                    <i class="fa-solid fa-caret-down"></i>
+                                    <select class="form-control custom-select" id="exampleFormControlSelect1">
+                                        <option>Select Country</option>
+                                        <option>Thailand</option>
+                                        <option>Indonesia</option>
+                                        <option>USA</option>
+                                        <option>India</option>
+                                        <option>UAE</option>
+                                        <option>Brazil</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" placeholder="Enter Email ID" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" style="height: auto;"  placeholder="Type here..."></textarea>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="form-footer">
+                            <button class="btn btn-primary btn-block" style="width: 100%;">Send Message</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 ">
+                    <div class="world-map">
+
+                        <!--Google map-->
+                        <div id="map-container-google-1" class="z-depth-1-half map-container">
+                            <iframe src="https://maps.google.com/maps?q=manhatan&amp;t=&amp;
+                            z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+                        <!--Google Maps-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---------------------section 9------------------------------------ -->
+    <section style="padding-top: 45px; background-color: #000;">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <h5>Activities</h5>
+                            <ul>
+                                <li><a href="activities.html">Luxury Cruising</a></li>
+                                <li><a href="activities.html">Dolphin Watching</a></li>
+                                <li><a href="activities.html">Fishing</a></li>
+                                <li><a href="activities.html">Stag / Hen Parties</a></li>
+                                <li><a href="activities.html">Gibraltar Tour</a></li>
+                                <li><a href="activities.html">Corporate Events</a></li>
+                                <li><a href="activities.html">Day Sailing</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <h5>Yachts</h5>
+                            <ul>
+                                <li><a href="activities.html">Moto groupr Yachts</a></li>
+                                <li><a href="activities.html">Fishing Boats</a></li>
+                                <li><a href="activities.html">Sailing Yachts</a></li>
+                                <li><a href="activities.html">Groups Boats</a></li>
+                                <li><a href="activities.html">About</a></li>
+                                <li><a href="activities.html">Management</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <div class="footer-con">
+                                <h5>Contact Us</h5>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt mt-2"></i>
+                                        <p>2079 Settlers Lane, lorem ipsum - 56478354</p>
+                                    </li>
+                                    <li><i class="fas fa-envelope mt-1"></i>
+                                        <p>email@example.com</p>
+                                    </li>
+                                    <li><i class="fas fa-phone mt-1"></i>
+                                        <p>+54 192 45 78 621 / 622 / 623</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-social mt-4">
+                                <h6 style="font-size: 20px;">We are social</h6>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="footer-col">
+                            <div class="footer-part">
+                                <h5>Business Partner</h5>
+                                <div>
+                                    <img src="assets/asset 17.webp" alt="">
+                                </div>
+                                <p>Our huge list of partner market is lorem ipsum dolor sit consectetur
+                                    amet,
+                                    adipisicing elit. Suscipit, incidunt vero quod numquam tempore quia
+                                    ipsa.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer-copy">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 ">
+                            <p class="m-0">Copyright © 2022 Moric. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+    <!-- js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/multi-animated-counter.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var h = $(window).scrollTop()
+
+                if (h > 20) {
+                    $('.header').addClass('fixed_header')
+                } else {
+                    $('.header').removeClass('fixed_header')
+                }
+            })
+
+            //Responsive header//-----------------------
+            $('.mob_submenu ').hide()
+
+            $('.toggle_icon').click(function () {
+                $('.mob_main_menu').toggleClass('close')
+                $(this).find('i').toggleClass('fa-bars fa-times');
+            })
+
+            $('.mob_main_menu > li > a').click(function () {
+                $(this).next('.mob_submenu').slideToggle();
+            })
+            $('.mob_main_menu li a').click(function () {
+                $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
+            })
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
